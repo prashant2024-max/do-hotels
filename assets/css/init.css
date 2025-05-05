@@ -140,7 +140,7 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 
 .comm_Btn{font-size: 12px;font-family: var(--primary-font);color: var(--secondary-color);font-weight: var(--fw-semi-bold);float: left; letter-spacing: 3px; line-height: 24px; text-transform: uppercase; position: relative;}
 .comm_Btn::after{content: ""; position: absolute; bottom: 0; background: var(--secondary-color); width: 65px; height: 2px; left: 0;}
-.comm_Btn.hollow{background-color: transparent; color: var(--primary-color); text-transform: uppercase; padding: 0;}
+.comm_Btn.hollow{background-color: transparent; color: var(--secondary-color); text-transform: uppercase; padding: 0;}
 
 .spanGredient {
   background: var(--primary-gadient);

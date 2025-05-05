@@ -1,5 +1,5 @@
 @media only screen and (max-width:1200px){
-    .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width: 90%;}
+    .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper, .hmMedia-wrapp{width: 90%;}
     .main-wrapper > .wrap-Content{width: 100%;}
     .wrap-our_story_slider{padding-left:3em;}
 
@@ -7,6 +7,14 @@
     /* Music Theme */
     .musicThemeInfo{min-height: 1vh;}
 }
+
+@media only screen and (max-width:1160px){
+    /* Home Media Slide */
+    .hmMediaSlideTxt{max-width: 270px;}
+    .hmMediaSlideImg{max-width: 620px;}
+    .hmMediaSlideTxt.slick-slider button{bottom: -134px;}
+}
+
 @media only screen and (max-width:1024px){
     :root{--main-title:100px;--sub-title:52px;--Sub_Heading:18px;--body:15px;--body-sub:12px;--secGap:80px;}
     .headMenu > nav > ul > li:not(:last-child){margin-right:1em;}
@@ -15,7 +23,18 @@
     .laguna_residence_slider button.slick-next.slick-arrow{right:-3%;}
     .laguna_residence_slider button.slick-prev.slick-arrow{left:-3%;}
     .laguna_residenceSlideTitle{margin:1.6em 0 1em;}
+
+    
+    .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 55px; height: 55px;}
+    .hmMediaSlideTxt button.slick-next{left: 71px;}
 }
+
+@media only screen and (max-width:991px){
+    /* Home Media Slide */
+    .hmMediaSlideTxt {max-width: 220px;}
+    .hmMediaSlideImg {max-width: 600px;}
+}
+
 @media only screen and (max-width:950px){
     :root{--main-title:80px;--sub-title:42px;--Sub_Heading:17px;--body:14px;--body-sub:11px;--secGap:60px;}
     .headMenu,.headBtns .langBtn{display: none;}
@@ -30,20 +49,40 @@
     .contactUsMapCont .dubai_cont.active,.contactUsMapCont .abuDhabi_cont.active{display:block;}
     section.registerSec{min-height:auto;}
 
+    .destiniBoxTxt {padding: 0 2em;}
+
+    /* Home Media Slide */
+    .hmMediaSlideTxt {max-width: 190px;}
+    .hmMediaSlideImg {max-width: 470px;}
+    .hmMediaSlideTxt.slick-slider button {bottom: -92px;}
+
+    /* Contact */
+    .registerSecContTxt .comm_Title {font-size: 80px;}
+
 }
 @media only screen and (max-width:768px){
     :root{--sub-title:30px;}
+
     /* home music driven slider */
     .mdSlideBox {flex-direction: column;}
     .mdSlide {overflow: auto;overflow-x: hidden;}
     .mdSlide p,.mdSlide ul li {font-size: 2em;}
     .mdSlideTitle {transform: rotate(0deg) !important;}
+    .hmMediaBox::after{height: 10%;}
 
     .registerSecCont{flex-direction:column;gap:1.5em;}
     .registerSecContTxt{text-align:center;max-width:620px;}
     .registerSecFrm-0{right:50%;transform:translate(50%,-50%);}
     .registerSecFrm-0 > img{margin: auto}
     .our_story-o{width: clamp(100px, 70vw, 799px);}
+
+    .hmDestinySec{background-position: center;}
+
+    /* Home Media Slide */
+    .hmMediaSliderBox{flex-direction: column-reverse; gap: 20px;}
+    .hmMediaSlideTxt {max-width: 100%;}
+    .hmMediaSlideImg {max-width: 100%;}
+
 }
 @media only screen and (max-width:610px){
     :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
@@ -93,11 +132,23 @@
     .ourStoryHeroContent{text-align: center;}
     .inspireSec{padding-top:calc(var(--secGap) * 1.8);}
 
+    .homeMusicStory{background-position: right;}
+
+    .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 43px; height: 43px;}
+
+    /* contact */
+    .registerSecContTxt .comm_Title {font-size: 54px;}
+
 }
 @media only screen and (max-width:550px){
     /* Music Theme */
     .musicThemeInfo .wrap-Content {padding: 0;}
     .media_Card{margin-bottom:1.5em;}
+
+    .hmDestinySec{padding-bottom: 2.5em;}
+    .destiniBoxTxt {padding: 0;}
+    .hmMediaBox{padding: 2.5em 0;}
+    .registerSec{padding: 6em 0 2.5em;}
 }
 @media only screen and (max-width:460px){
     .registerSecFrm-0{transform:translate(50%,-90%);}
@@ -105,5 +156,8 @@
 }
 @media only screen and (max-width:360px){
     :root{--main-title:50px;--sub-title:20px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
-    .comm_Btn{padding: 0.8em 1.3em;}
+    
+
+    /* contact */
+    .registerSecContTxt .comm_Title {font-size: 50px;}
 }

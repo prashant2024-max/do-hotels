@@ -10,15 +10,16 @@ header *{transition: all 0.3s;}
 .headBtns .langBtn{margin-right: 0.8em;}
 header.stickyHead{position:fixed;top:0;width:100%;z-index:1000; padding: 1em 0;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 header.stickyHead .headLogo{width:clamp(130px,18vw,289px);}
-.stickyHead .comm_Btn.hollow{color: #fff;}
+/* .stickyHead .comm_Btn.hollow{color: #fff;} */
 .headBtn {gap: 28px;}
 .headSearch{width: 24px; height: 24px;}
 .headBtn .comm_Btn::after{content: ""; width: 0; height: 0;}
 header.stickyHead{backdrop-filter: blur(10px);transition: backdrop-filter 0.3s ease;}
+.headBtn .comm_Btn.hollow svg{max-width: 6px; margin-right: 2px;}
 
 /*  */
 .hmHeroBanner{max-height: 100vh;}
-.hmHeroBanner video{float: left; width: 100%;}
+.hmHeroBanner video{float: left; width: 100%; object-fit: cover;}
 .hmBannText{height: 100%; display: flex; justify-content: center; align-items: center; inset: 0;}
 .hmHeroSecBtn{bottom: 4.18em; display: inline;}
 .hmHeroSecBtn a img{width: 32px; height: 32px; }
@@ -70,6 +71,8 @@ footer{background-color: #DEDFE4;}
 .musicThemeInfo::before{ content: ""; width: 100%; height: 58%; background: url('/assets/images/musicthemerect.png'); background-size: 100% 100%; background-repeat: no-repeat; position: absolute; bottom: 80px;}
 .musicThemeInfo .wrap-Content{padding: 0 80px;}
 .hmMusicTxt{inset: 0; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 999;}
+.musicThemeVideo {height: 100%;}
+.musicThemeVideo video{height: 100%; object-fit: cover;}
 
 
 /* Home Music Story */
@@ -99,7 +102,7 @@ margin-top: 1.25em;}
 .hmDevInfo p{color: var(--White);}
 
 /* Home Music Driven */
-.hmMusicDriveSec{padding: 6.25em 0; background: url('/assets/images/musicDrivenBg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
+.hmMusicDriveSec{ background: url('/assets/images/musicDrivenBg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
 .musicDriven-wrapp{max-width: 779px; width: 100%; margin: 0 auto;}
 .mdSlideBox {position: relative;  width: 100%; display: flex; overflow: hidden; flex-direction: row;}
 .mdSlide {flex: 1;cursor: pointer;transition: all 500ms ease;  height: 55vh; position: relative; border-right: 1px solid #fff;}
@@ -108,7 +111,7 @@ margin-top: 1.25em;}
 .mdSlideArrow{left: 50%; position: absolute; top: 50px; transform: translateX(-50%);z-index: 10;}
 
 /* Home Media */
-.hmMediaBox{padding: 6.25em 0; background: url('/assets/images/hmmediabg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
+.hmMediaBox{ background: url('/assets/images/hmmediabg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
 .hmMediaBox::after{content: ""; width: 100%; height: 30%; position: absolute; right: 0; left: 0; bottom: -2px; background: url('/assets/images/hmmediaafter.png'); background-size: 100% 100%;}
 .hmMedia-wrapp{max-width: 1080px; width: 100%; margin: 0 auto;}
 .hmMediaSliderBox{display: flex; justify-content: space-between; align-items: center; margin-top: 2.5em; flex-wrap: wrap;}
@@ -134,8 +137,9 @@ margin-top: 1.25em;}
 
 
 /* Floating Label Form */
-.registerSec{padding: 6.25em 0; background: url('/assets/images/hmContactBg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
+.registerSec{ background: url('/assets/images/hmContactBg.png'); background-size: 100% 100%; background-repeat: no-repeat; }
 .hmContact-wrapp{max-width: 1123px; width: 100%; margin: 0 auto;}
+.registerSecCont {gap: 1em;}
 .registerSecContTxt .comm_Title{font-size: 100px;}
 .registerSecContTxt p{max-width: 578px; width: 100%; margin-right: auto; font-size: var(--body); line-height: 140%; font-weight: lighter; color: var(--White); text-transform: none;}
 .registerSecContTxt > *{text-transform: uppercase;}
@@ -228,7 +232,7 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 .osVisionSec .osMissionTxt{max-width: 473px; width: 100%;}
 
 /* Back By Sec */
-.osBackBySec{padding: 6.25em 0; background-image: url(../images/backvidebg.png);background-position: center;background-repeat: no-repeat;background-size: cover; isolation: isolate;}
+.osBackBySec{ background-image: url(../images/backvidebg.png);background-position: center;background-repeat: no-repeat;background-size: cover; isolation: isolate;}
 .osBackBySec::after {
   content: "";
   width: 100%;
@@ -247,7 +251,7 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 .backDesc p{text-align: center; font-size: var(--body-sub); font-weight: var(--fw-light); line-height: 140%; color: var(--White);}
 
 /* Luxury Hotel Sec */
-.osLuxuryHotel{padding: 6.25em 0; min-height: 100vh; background-image: url(../images/luxuryhotelbg.png);background-position: center;background-repeat: no-repeat;background-size: cover; display: flex; justify-content: center; align-items: center;}
+.osLuxuryHotel{ min-height: 100vh; background-image: url(../images/luxuryhotelbg.png);background-position: center;background-repeat: no-repeat;background-size: cover; display: flex; justify-content: center; align-items: center;}
 .osLuxuryHotel::after {
   content: "";
   width: 100%;
@@ -262,7 +266,7 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 .osLuxuryBox  h2{font-size: 40px; font-weight: var(--fw-medium); line-height: 140%; letter-spacing: 8%;}
 
 /*  */
-.osInsipreLeg{min-height: 100vh; padding: 6.25em 0; background-image: url(../images/inspirelegacybg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%; display: flex; align-items: end; isolation: isolate;}
+.osInsipreLeg{min-height: 100vh;  background-image: url(../images/inspirelegacybg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%; display: flex; align-items: end; isolation: isolate;}
 .osInspireTxt{max-width:613px; width: 100%; }
 .osInspireTxt p{color: var(--White); font-weight: var(--fw-light); line-height: 140%; font-size: var(--body-sub);}
 .osInsipreLeg::after {
@@ -279,10 +283,10 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 }
 
 /* Director Board */
-.osDirBoard{min-height: 100vh; padding: 6.25em 0; background-image: url(../images/boarddirbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.osDirBoard{min-height: 100vh;  background-image: url(../images/boarddirbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
 
 /* Director Board */
-.osLeaderTeam{padding: 6.25em 0; background-image: url(../images/leadershipbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.osLeaderTeam{ background-image: url(../images/leadershipbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
 .dirBoardSlide {position: relative; width: 100%; margin: 0 auto; min-height: 1vh;padding:0 3em;}
 .boardSwiperBox {width: 100%;padding-top: 3.125rem;}
 .boardSwiperBox .swiper-pagination-bullet,
@@ -359,7 +363,7 @@ border-radius: 10px;}
 .leaderName p{font-size: var(--body-sub); line-height: 122%; font-weight: var(--fw-medium);}
 
 /* Partner Section */
-.osPartnerBox{padding: 6.25em 0; background-image: url(../images/partnerbg.png);background-position: top;background-repeat: no-repeat;background-size: cover; isolation: isolate;}
+.osPartnerBox{ background-image: url(../images/partnerbg.png);background-position: top;background-repeat: no-repeat;background-size: cover; isolation: isolate;}
 .osPartnerBox::after{
   content: "";
   width: 100%;

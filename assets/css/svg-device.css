@@ -131,7 +131,7 @@
     .ourStoryHeroSec::after{background-image: url(../images/ourStoryBannerGradientMobile.png);}
     .ourStoryHeroContent{text-align: center;}
     .inspireSec{padding-top:calc(var(--secGap) * 1.8);}
-
+    .contactPgCont{padding-top: calc(var(--secGap) * 3);}
     .homeMusicStory{background-position: right;}
 
     .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 43px; height: 43px;}

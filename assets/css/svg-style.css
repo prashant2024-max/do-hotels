@@ -437,3 +437,5 @@ border-radius: 10px;}
 .contactInfoNo{margin-right: 70px;}
 .contactInfoAdd{max-width: 220px;}
 .contactInfoMapBtn{margin-top: 2em;}
+.contactPgCont{padding-top: calc(var(--secGap) * 3);}
+.mobileCont{display: none;}

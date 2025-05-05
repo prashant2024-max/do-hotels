@@ -107,12 +107,32 @@
 
 }
 @media only screen and (max-width:610px){
-    :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:16px;--body-sub:14px;--secGap:40px;}
+    :root{--main-title:36px;--sub-title:24px;--Sub_Heading:16px;--body:20px;--body-sub:14px;--secGap:100px;}
 
     .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width:91.43%;}
     .desktop{display:none;}
     .mobile{display:block;}
+
+    .hmHeroSec{min-height: auto; padding-top: calc(var(--secGap) * 1.5);}
     .hmBannText{padding: 0 1em;}
+    .hmBannText .comm_Title {text-align: center;font-size: 64px;letter-spacing: 4px;margin-bottom: 57px;}
+
+    .musicTxt h2{padding: 0 26px;}
+
+    .homeMusicStory{min-height: auto; background: url(/assets/images/storymobbann.png); background-size: 100% 100%;}
+    .hmMusicStoryInfo{text-align: center;}
+    .hmMusicStoryInfo p{padding-left: 0 !important;}
+    .mediaReadMore {margin-top: 2em;display: flex;justify-content: center;}
+
+    .hmMediaSliderBox{gap: 0;}
+    .hmDevHead p{padding-left: 0; text-align: center; font-size: 8px;} 
+    .hmDevHead h2{text-align: center;}   
+    .hmMediaSliderBox{margin-top: 2.25em;}
+    .hmMediaSlideImg{margin-bottom: 2.31em;}
+    .hmMediaTxt p{text-align: center; line-height: 106%;}
+    .hmMediaSlideTxt.slick-slider button {bottom: -80px;}
+
+    .hmDestinySec{min-height: 493px; background: url(/assets/images/destinymobbann.png); background-size: 100% 100%;}
 
     .contactInfoSec.sv-secGap{padding-top: calc(var(--secGap) * 2);}
     .footerTop{flex-direction: column;}
@@ -156,10 +176,8 @@
     .contactPgCont{padding-top: calc(var(--secGap) * 3);}
     .homeMusicStory{background-position: right;}
 
-    .hmDestinySec{min-height: auto; background-size: cover;}
-
     .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 43px; height: 43px;}
-    .hmMediaSlideTxt.slick-slider button {bottom: -60px;}
+    
     
 
     /* contact */
@@ -172,7 +190,13 @@
     .partLogo:nth-child(4), .partLogo:nth-child(8) {border-right: 1px solid rgba(255, 255, 255, 0.28);}
     .partLogo:nth-child(5), .partLogo:nth-child(6){border-bottom: 1px solid rgba(255, 255, 255, 0.28);}
 
+    .osBackLogos{margin-top: 2em;}
+
+
+
 }
+
+
 @media only screen and (max-width:550px){
     .headLogo{max-width: 70px;}
 
@@ -181,24 +205,23 @@
 
     .hmDestinySec{padding-bottom: 2.5em;}
     .destiniBoxTxt {padding: 0;}
-    .hmMediaBox{padding: 2.5em 0;}
-    .registerSec{padding: 6em 0 2.5em;}
     .contactPgCont{padding-top:calc(var(--secGap) * 4);}
-
 }
 @media only screen and (max-width:460px){
     :root{--main-title:35px;}
-    .registerSec {padding-top: 5.5em;}
 
     .registerSecFrm-0{transform:translate(50%,-90%);}
     .contactUsMapCont{right: 10%;}
-
-
-    /* our story */
-    
 }
+
+
+@media only screen and (max-width:390px){
+    .hmMusicStoryInfo p:first-child{padding-left: 0 !important; font-size: 8px;}
+}
+
+
 @media only screen and (max-width:360px){
-    :root{--main-title:32px;--sub-title:20px;--Sub_Heading:16px;--body:16px;--body-sub:14px;--secGap:40px;}
+    :root{--main-title:32px;--sub-title:20px;--Sub_Heading:16px;--body:16px;--body-sub:14px;}
     
 
     /* contact */

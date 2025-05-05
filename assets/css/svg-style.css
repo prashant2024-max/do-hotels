@@ -1,5 +1,5 @@
 /* Header */
-.hmHeroSec{background: url('/assets/images/videoBannImg.png'); background-size: cover; background-repeat: no-repeat; height: 100vh;}
+.hmHeroSec{background: url('/assets/images/videoBannImg.png'); background-size: cover; background-repeat: no-repeat; min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 header{position: fixed;top: 0;left: 0;z-index: 99;padding: 2em 0;transition: all 0.3s;}
 header *{transition: all 0.3s;}
 .headLogo{width: clamp(148px, 23vw, 289px); max-width: 103px; margin-left: 88px;}

@@ -83,6 +83,15 @@
     .hmMediaSlideTxt {max-width: 100%;}
     .hmMediaSlideImg {max-width: 100%;}
 
+    .registerSecContFrm,.contactPgCont .registerContForm{max-width:100%;width:100%;}
+    .deskCont{display: none;}
+    .mobileCont{display: block;}
+    .contactInfoNo,.contactInfoAdd{text-align: center;}
+    .contactInfoNo{margin-right:0px;}
+    .contactInfo-a, .contactInfo-p{justify-content: center;display: inline-flex;width: 100%;}
+    .contactInfoMapBtn{display:flex;justify-content:center;}
+    .contactInfoAdd{margin: auto;margin-top: 2em;}
+    .contactInfo-a:not(:last-child){width: auto;margin-inline: 0.5em;}
 }
 @media only screen and (max-width:610px){
     :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
@@ -137,7 +146,8 @@
     .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 43px; height: 43px;}
 
     /* contact */
-    .registerSecContTxt .comm_Title {font-size: 54px;}
+    .registerSecContTxt .comm_Title {font-size: 36px;}
+    .contactPgCont{padding-top:calc(var(--secGap) * 4);}
 
 }
 @media only screen and (max-width:550px){
@@ -149,6 +159,8 @@
     .destiniBoxTxt {padding: 0;}
     .hmMediaBox{padding: 2.5em 0;}
     .registerSec{padding: 6em 0 2.5em;}
+    .contactPgCont{padding-top:calc(var(--secGap) * 4);}
+
 }
 @media only screen and (max-width:460px){
     .registerSecFrm-0{transform:translate(50%,-90%);}

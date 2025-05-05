@@ -431,8 +431,8 @@ border-radius: 10px;}
 .contactPgCont .registerSecContTxt .comm_Title{color: var(--primary-color);font-weight: var(--fw-medium);line-height: 0.97;letter-spacing: 8px;font-family: var(--primary-font);}
 .contactPgCont .registerSecContTxt{display:flex;flex-direction:column;justify-content: space-between;}
 .contactInfo-a > img{max-width:10px;}
-.contactInfoTitle > *{font-size: var(--body);font-weight: var(--fw-medium);line-height: 1.5;font-family: var(--primary-font);color: var(--White);text-transform: capitalize;}
-.contactInfo-a > a,.contactInfo-p > p{font-size: var(--body-sub);font-weight: var(--fw-light);font-family: var(--primary-font);line-height: 1.4;color: var(--White);}
+.contactInfoTitle > *{font-size: 20px;font-weight: var(--fw-medium);line-height: 1.5;font-family: var(--primary-font);color: var(--White);text-transform: capitalize;}
+.contactInfo-a > a,.contactInfo-p > p{font-size: 16px;font-weight: var(--fw-light);font-family: var(--primary-font);line-height: 1.4;color: var(--White);}
 .contactInfo-a,.contactInfo-p{margin-top: 1em;gap: 0.6em;}
 .contactInfoNo{margin-right: 70px;}
 .contactInfoAdd{max-width: 220px;}

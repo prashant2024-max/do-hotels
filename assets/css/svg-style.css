@@ -140,7 +140,12 @@ margin-top: 1.25em;}
 .registerSecContTxt p{max-width: 578px; width: 100%; margin-right: auto; font-size: var(--body); line-height: 140%; font-weight: lighter; color: var(--White); text-transform: none;}
 .registerSecContTxt > *{text-transform: uppercase;}
 section.registerSec{min-height:100vh;display:flex;align-items:center;}
-.registerContForm{box-shadow:0px 4px 72.1px rgba(150,107,252,0.21);border-radius:12px;background:var(--secondary-gadient);padding:2em;}
+.registerContForm{box-shadow:0px 4px 72.1px rgba(150,107,252,0.21);border-radius:12px;background:var(--secondary-gadient);padding:2em;box-shadow: 0px 4px 72.1px rgba(228, 141, 61, 0.38);}
+
+
+
+
+
 .registerSecContFrm{max-width:370px;width:100%;}
 .entriesCheck > label{font-size:var(--body-sub);color:var(--Tertiary-color);font-weight: var(--fw-medium);font-family:var(--primary-font);position:relative;display:flex;align-items:center;}
 .entriesCheck > input{-webkit-appearance:auto;padding:0;height:initial;width:initial;margin-bottom:0;display:none;cursor:pointer;}
@@ -154,7 +159,7 @@ section.registerSec{min-height:100vh;display:flex;align-items:center;}
 .floating-labelInp select.has-value{color:#E6DAFE;}
 .floating-labelInp select{background-image:url(../images/selectArr.png);background-repeat:no-repeat;background-position:right 10px center;background-size:8px;padding-right:2.6em;}
 .registerContForm-ul{gap: 1.5em;}
-.registerContForm-ul > li:not(:last-child,:nth-last-child(2)){width: 100%; margin-bottom: 0.5em;padding-bottom: 0.5em;border-bottom:  0.8px solid rgba(230, 218, 254, 0.6);}
+.registerContForm-ul > li:not(:last-child){width: 100%; margin-bottom: 0.5em;padding-bottom: 0.5em;border-bottom:  0.8px solid rgba(0, 0, 0, 0.15);}
 .registerContForm-ul > li.col-100{width: 100%;}
 .registerSecFrm-0{top:50%;right:0;transform:translateY(-50%);z-index:-1;width:100%;}
 .registerSecFrm-0 > img{width:62vw;max-width:62%;max-height:100vh;margin-left:auto;}
@@ -412,3 +417,19 @@ border-radius: 10px;}
 .devHospitality{background-image: url(../images/hospitalitybg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;min-height: 100vh; display: flex; justify-content: center; align-items: center;}
 .devHospTxt{max-width: 603px; width: 100%; float: right;}
 .devHospTxt h2{text-align: right; letter-spacing: 8px; color: var(--primary-color);}  
+
+
+
+/* Contact Us Page */
+.contactPgCont{background-image: url(../images/contact_pg-bg.png);}
+.contact-wrapper{max-width: 1120px;margin: auto;}
+.contactPgCont .registerContForm{max-width: 352px;margin-left: auto;}
+.contactPgCont .registerSecContTxt .comm_Title{color: var(--primary-color);font-weight: var(--fw-medium);line-height: 0.97;letter-spacing: 8px;font-family: var(--primary-font);}
+.contactPgCont .registerSecContTxt{display:flex;flex-direction:column;justify-content: space-between;}
+.contactInfo-a > img{max-width:10px;}
+.contactInfoTitle > *{font-size: var(--body);font-weight: var(--fw-medium);line-height: 1.5;font-family: var(--primary-font);color: var(--White);text-transform: capitalize;}
+.contactInfo-a > a,.contactInfo-p > p{font-size: var(--body-sub);font-weight: var(--fw-light);font-family: var(--primary-font);line-height: 1.4;color: var(--White);}
+.contactInfo-a,.contactInfo-p{margin-top: 1em;gap: 0.6em;}
+.contactInfoNo{margin-right: 70px;}
+.contactInfoAdd{max-width: 220px;}
+.contactInfoMapBtn{margin-top: 2em;}

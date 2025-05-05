@@ -1,0 +1,109 @@
+@media only screen and (max-width:1200px){
+    .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width: 90%;}
+    .main-wrapper > .wrap-Content{width: 100%;}
+    .wrap-our_story_slider{padding-left:3em;}
+
+
+    /* Music Theme */
+    .musicThemeInfo{min-height: 1vh;}
+}
+@media only screen and (max-width:1024px){
+    :root{--main-title:100px;--sub-title:52px;--Sub_Heading:18px;--body:15px;--body-sub:12px;--secGap:80px;}
+    .headMenu > nav > ul > li:not(:last-child){margin-right:1em;}
+    .media_Card .media_Card_txt{max-width:80%;}
+    .laguna_residence_slider button.slick-prev.slick-arrow,.laguna_residence_slider button.slick-next.slick-arrow{width:55px;height:55px;}
+    .laguna_residence_slider button.slick-next.slick-arrow{right:-3%;}
+    .laguna_residence_slider button.slick-prev.slick-arrow{left:-3%;}
+    .laguna_residenceSlideTitle{margin:1.6em 0 1em;}
+}
+@media only screen and (max-width:950px){
+    :root{--main-title:80px;--sub-title:42px;--Sub_Heading:17px;--body:14px;--body-sub:11px;--secGap:60px;}
+    .headMenu,.headBtns .langBtn{display: none;}
+    .mobile_Menu{display: block;}
+    .headLogo {margin-left: 0;}
+    .footLinks{justify-content:center;align-items:flex-start;gap: 2em;}
+    .laguna_residence_slider{margin-top:-3.5em;}
+    .contactUsCards{margin-top: 0;}
+    .contactMobileTabs > ul > li{display: block;}
+    .contactUsMapContTxt > *{font-size: calc(var(--body) - 6px);}
+    .contactUsMapCont{opacity: 1 !important;visibility: visible !important;}
+    .contactUsMapCont .dubai_cont.active,.contactUsMapCont .abuDhabi_cont.active{display:block;}
+    section.registerSec{min-height:auto;}
+
+}
+@media only screen and (max-width:768px){
+    :root{--sub-title:30px;}
+    /* home music driven slider */
+    .mdSlideBox {flex-direction: column;}
+    .mdSlide {overflow: auto;overflow-x: hidden;}
+    .mdSlide p,.mdSlide ul li {font-size: 2em;}
+    .mdSlideTitle {transform: rotate(0deg) !important;}
+
+    .registerSecCont{flex-direction:column;gap:1.5em;}
+    .registerSecContTxt{text-align:center;max-width:620px;}
+    .registerSecFrm-0{right:50%;transform:translate(50%,-50%);}
+    .registerSecFrm-0 > img{margin: auto}
+    .our_story-o{width: clamp(100px, 70vw, 799px);}
+}
+@media only screen and (max-width:610px){
+    :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
+
+    .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width:91.43%;}
+    .desktop{display:none;}
+    .mobile{display:block;}
+    .hmBannText{padding: 0 1em;}
+
+    .contactInfoSec.sv-secGap{padding-top: calc(var(--secGap) * 2);}
+    .footerTop{flex-direction: column;}
+    .footLinks2{text-align: center;}
+    .footerWrapper{flex-direction:column-reverse;gap:0.8em;}
+    .registerSecContTxt{max-width:420px;}
+    .registerSecFrm-0 > img{max-width:100vw;width: 95%;}
+    .registerContForm-ul > li:not(:last-child,:nth-last-child(2)){width:100%;}
+    .media_Card{width:100%;}
+    .laguna_residence_slider_Img > img{max-width:282px;}
+    .laguna_residence_slider{margin-top:-1.5em;}
+    .laguna_residence_slider button.slick-prev.slick-arrow,.laguna_residence_slider button.slick-next.slick-arrow{width:43px;height:43px;top:110%;}
+    .laguna_residence_slider_Img > img{width:100%;}
+    .laguna_residence_slider button.slick-prev.slick-arrow{left:50%;transform:translateX(-50px);}
+    .laguna_residence_slider button.slick-next.slick-arrow{right:50%;transform:translateX(50px);}
+    .wrap-our_story_slider{flex-direction:column;padding-left:0;gap:2em;}
+    .our_story_slider .main-wrapper{width:91.43%;}
+    .our_story_sliderTitle > *,.our_story_sliderDesc > p{text-align:center;}
+    .our_story_sliderDesc > p{max-width:90%;}
+    .our_story_sliderTitle > * br{display:none;}
+    .our_story_sliderImg > img{border-radius:8px;}
+    .our_story-o{width:clamp(100px,100vw,799px);}
+    .contactUsCard{width:100%;max-width:323px;margin:auto;}
+    .contactUsCard > *{display:flex;justify-content:center;text-align:center;margin:auto;flex-direction:column;align-items:center;}
+    .contactUsCard_p > p{min-height:auto;}
+    .contactUsCard_icon{margin-bottom:1em;}
+    .contactInfoTitle{top:30px;left: 22px;}
+
+    .registerSecContTxt .comm_Title {font-size: 54px;}
+    .registerSecContTxt > *{max-width:375px;}
+    .wrap-Content.mapWrap-mobile{width: 100%;}
+    .our_story_Desc{margin:1.6875em 0 2.625em;}
+    .our_story_slider{background-size:100% 115%;}
+    .our_story-o{top:120px;}
+    section.laguna_residenceSec.sv-secGap{padding:calc(var(--secGap) * 2) 0;}
+    .contactUsMapCont{width: clamp(80px, 14vw, 100px);height:clamp(80px, 14vw, 100px);}
+    .ourStoryHeroSec{background-image: url(../images/ourStoryBannerMobile.png);min-height: 50vh;}
+    .ourStoryHeroSec::after{background-image: url(../images/ourStoryBannerGradientMobile.png);}
+    .ourStoryHeroContent{text-align: center;}
+    .inspireSec{padding-top:calc(var(--secGap) * 1.8);}
+
+}
+@media only screen and (max-width:550px){
+    /* Music Theme */
+    .musicThemeInfo .wrap-Content {padding: 0;}
+    .media_Card{margin-bottom:1.5em;}
+}
+@media only screen and (max-width:460px){
+    .registerSecFrm-0{transform:translate(50%,-90%);}
+    .contactUsMapCont{right: 10%;}
+}
+@media only screen and (max-width:360px){
+    :root{--main-title:50px;--sub-title:20px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
+    .comm_Btn{padding: 0.8em 1.3em;}
+}

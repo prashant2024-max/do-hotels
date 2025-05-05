@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width:1024px){
-    :root{--main-title:100px;--sub-title:52px;--Sub_Heading:18px;--body:15px;--body-sub:12px;--secGap:80px;}
+    :root{--main-title:100px;--sub-title:52px;--Sub_Heading:18px;--body-sub:12px;--secGap:80px;}
     .headMenu > nav > ul > li:not(:last-child){margin-right:1em;}
     .media_Card .media_Card_txt{max-width:80%;}
     .laguna_residence_slider button.slick-prev.slick-arrow,.laguna_residence_slider button.slick-next.slick-arrow{width:55px;height:55px;}
@@ -36,8 +36,11 @@
 }
 
 @media only screen and (max-width:950px){
-    :root{--main-title:80px;--sub-title:42px;--Sub_Heading:17px;--body:14px;--body-sub:11px;--secGap:60px;}
+    :root{--main-title:80px;--sub-title:42px;--Sub_Heading:17px;--body:18px;--body-sub:16px;--secGap:60px;}
     .headMenu,.headBtns .langBtn{display: none;}
+
+    .headBtn{flex-direction: row-reverse;}
+    .headBtns > div{gap: 16px;}
     .mobile_Menu{display: block;}
     .headLogo {margin-left: 0;}
     .footLinks{justify-content:center;align-items:flex-start;gap: 2em;}
@@ -62,6 +65,8 @@
 }
 @media only screen and (max-width:768px){
     :root{--sub-title:30px;}
+    
+    .hmBannText .comm_Title{text-align: center;}
 
     /* home music driven slider */
     .mdSlideBox {flex-direction: column;}
@@ -92,9 +97,17 @@
     .contactInfoMapBtn{display:flex;justify-content:center;}
     .contactInfoAdd{margin: auto;margin-top: 2em;}
     .contactInfo-a:not(:last-child){width: auto;margin-inline: 0.5em;}
+    .hmMediaSlideTxt button.slick-next.slick-arrow,button.slick-prev.slick-arrow{left: calc(50% - 22px);right: auto;}
+    .hmMediaSlideTxt button.slick-prev.slick-arrow{transform: translateX(-38px);}
+    .hmMediaSlideTxt button.slick-next.slick-arrow{transform: translateX(38px);}
+
+
+    /* Our Story */
+    .ourStoryBannTxt p{padding: 0;}
+
 }
 @media only screen and (max-width:610px){
-    :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
+    :root{--main-title:54px;--sub-title:22px;--Sub_Heading:16px;--body:16px;--body-sub:14px;--secGap:40px;}
 
     .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width:91.43%;}
     .desktop{display:none;}
@@ -136,22 +149,33 @@
     .our_story-o{top:120px;}
     section.laguna_residenceSec.sv-secGap{padding:calc(var(--secGap) * 2) 0;}
     .contactUsMapCont{width: clamp(80px, 14vw, 100px);height:clamp(80px, 14vw, 100px);}
-    .ourStoryHeroSec{background-image: url(../images/ourStoryBannerMobile.png);min-height: 50vh;}
+    .ourStoryHeroSec{min-height: 50vh;}
     .ourStoryHeroSec::after{background-image: url(../images/ourStoryBannerGradientMobile.png);}
     .ourStoryHeroContent{text-align: center;}
     .inspireSec{padding-top:calc(var(--secGap) * 1.8);}
     .contactPgCont{padding-top: calc(var(--secGap) * 3);}
     .homeMusicStory{background-position: right;}
 
+    .hmDestinySec{min-height: auto; background-size: cover;}
+
     .hmMediaSlideTxt button.slick-next, .hmMediaSlideTxt button.slick-prev {width: 43px; height: 43px;}
+    .hmMediaSlideTxt.slick-slider button {bottom: -60px;}
+    
 
     /* contact */
-    .registerSecContTxt .comm_Title {font-size: 36px;}
-    .contactPgCont{padding-top:calc(var(--secGap) * 4);}
+    .registerSecContTxt .comm_Title {font-size: 54px;}
+
+    /* Our Story */
+    .osMissionVision, .osMissionVision{background-position: right; min-height: 50vh;}
+
+    .partLogoGall{grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+    .partLogo:nth-child(4), .partLogo:nth-child(8) {border-right: 1px solid rgba(255, 255, 255, 0.28);}
+    .partLogo:nth-child(5), .partLogo:nth-child(6){border-bottom: 1px solid rgba(255, 255, 255, 0.28);}
 
 }
 @media only screen and (max-width:550px){
-    /* Music Theme */
+    .headLogo{max-width: 70px;}
+
     .musicThemeInfo .wrap-Content {padding: 0;}
     .media_Card{margin-bottom:1.5em;}
 
@@ -163,11 +187,18 @@
 
 }
 @media only screen and (max-width:460px){
+    :root{--main-title:35px;}
+    .registerSec {padding-top: 5.5em;}
+
     .registerSecFrm-0{transform:translate(50%,-90%);}
     .contactUsMapCont{right: 10%;}
+
+
+    /* our story */
+    
 }
 @media only screen and (max-width:360px){
-    :root{--main-title:50px;--sub-title:20px;--Sub_Heading:16px;--body:14px;--body-sub:11px;--secGap:40px;}
+    :root{--main-title:32px;--sub-title:20px;--Sub_Heading:16px;--body:16px;--body-sub:14px;--secGap:40px;}
     
 
     /* contact */

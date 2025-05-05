@@ -199,9 +199,9 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      640: { slidesPerView: 2 },
-      768: { slidesPerView: 1 },
-      1024: { slidesPerView: 2 },
+      640: { slidesPerView: 3 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 3 },
       1560: { slidesPerView: 3 },
     },
   });
@@ -230,12 +230,16 @@ $(document).ready(function () {
         settings: { slidesToShow: 4 }
       },
       {
-        breakpoint: 768,
-        settings: { slidesToShow: 4 }
+        breakpoint: 610,
+        settings: { slidesToShow: 3 }
       },
       {
         breakpoint: 480,
         settings: { slidesToShow: 3 }
+      },
+      {
+        breakpoint: 390,
+        settings: { slidesToShow: 2 }
       }
     ]
   });

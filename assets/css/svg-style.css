@@ -210,10 +210,12 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 .ourStoryHeroSec{background-image: url(../images/osherobann.png);background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 100vh;}
 .ourStoryBannTxt{max-width: 1034px;width: 100%;margin: 0 auto;inset: 0; flex-direction: column;}
 .ourStoryBannTxt p{padding: 0 9.25em; text-align: center; color: var(--White); font-family: var(--primary-font); font-size: var(--body-sub); font-weight: var(--fw-light); line-height: 140%;}
+.ourStoryBannTxt h1{margin-bottom: 16px;}  
 
 /* Mission Vision */
 .osMissionVision{background-image: url(../images/missionbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 100vh; display: flex; justify-content: center; align-items: center;}
 .osMissionTxt{max-width: 587px; width: 100%;}
+.osMissionTxt h2{margin-bottom: 20px;}
 .osMissionTxt p{font-family: var(--primary-font); font-size: var(--body-sub); font-weight: var(--fw-light); line-height: 140%; color: var(--White); padding-right: 1.6em;} 
 .osMissionVision::after {
   content: "";
@@ -325,19 +327,19 @@ border-radius: 10px;}
 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active .osDirInfo h5{font-size: 36px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; } 
-.boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev, 
+/* .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next {
   transform: translate3d(0px, 0px, -550.301px) rotateX(0deg) rotateY(0deg) scale(1) !important;
-}
+} */
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev .osDirInfo h5, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next .osDirInfo h5{font-size: 20px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev .osDirInfo p, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; } 
 
-.boardSwiperBox .swiper-slide:first-child, .boardSwiperBox .swiper-slide:last-child{
+/* .boardSwiperBox .swiper-slide:first-child, .boardSwiperBox .swiper-slide:last-child{
   transform:translate3d(0px, 0px, -1100px) rotateX(0deg) rotateY(0deg) scale(1) !important;
-}
+} */
 
 .boardSwiperBox .swiper-slide:first-child .osDirInfo h5, .boardSwiperBox .swiper-slide:last-child .osDirInfo h5{font-size: 20px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 .boardSwiperBox .swiper-slide:first-child .osDirInfo p, .boardSwiperBox .swiper-slide:last-child .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; }
@@ -359,8 +361,8 @@ border-radius: 10px;}
   background-size: 100% 100%;
 }
 .leaderName{position: absolute; z-index: 99; bottom: 60px;}
-.leaderName h5{font-size: var(--body); font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); margin-bottom: 0.8em;}
-.leaderName p{font-size: var(--body-sub); line-height: 122%; font-weight: var(--fw-medium);}
+.leaderName h5{font-size: var(--body); font-family: var(--secondary-font); font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); margin-bottom: 0.5em;}
+.leaderName p{font-size: var(--body-sub); line-height: 122%; font-weight: var(--fw-medium); font-family: var(--secondary-font); color: var(--primary-color);}
 
 /* Partner Section */
 .osPartnerBox{ background-image: url(../images/partnerbg.png);background-position: top;background-repeat: no-repeat;background-size: cover; isolation: isolate;}

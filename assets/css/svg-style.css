@@ -210,12 +210,10 @@ g.dubai_point.active,g.abuDhabi_point{position: relative;}
 .ourStoryHeroSec{background-image: url(../images/osherobann.png);background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 100vh;}
 .ourStoryBannTxt{max-width: 1034px;width: 100%;margin: 0 auto;inset: 0; flex-direction: column;}
 .ourStoryBannTxt p{padding: 0 9.25em; text-align: center; color: var(--White); font-family: var(--primary-font); font-size: var(--body-sub); font-weight: var(--fw-light); line-height: 140%;}
-.ourStoryBannTxt h1{margin-bottom: 16px;}  
 
 /* Mission Vision */
 .osMissionVision{background-image: url(../images/missionbg.png);background-position: center;background-repeat: no-repeat;background-size: cover;min-height: 100vh; display: flex; justify-content: center; align-items: center;}
 .osMissionTxt{max-width: 587px; width: 100%;}
-.osMissionTxt h2{margin-bottom: 20px;}
 .osMissionTxt p{font-family: var(--primary-font); font-size: var(--body-sub); font-weight: var(--fw-light); line-height: 140%; color: var(--White); padding-right: 1.6em;} 
 .osMissionVision::after {
   content: "";
@@ -327,19 +325,19 @@ border-radius: 10px;}
 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active .osDirInfo h5{font-size: 36px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; } 
-/* .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev, 
+.boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next {
   transform: translate3d(0px, 0px, -550.301px) rotateX(0deg) rotateY(0deg) scale(1) !important;
-} */
+}
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev .osDirInfo h5, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next .osDirInfo h5{font-size: 20px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-prev .osDirInfo p, 
 .boardSwiperBox .swiper-slide.swiper-slide-visible.swiper-slide-next .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; } 
 
-/* .boardSwiperBox .swiper-slide:first-child, .boardSwiperBox .swiper-slide:last-child{
+.boardSwiperBox .swiper-slide:first-child, .boardSwiperBox .swiper-slide:last-child{
   transform:translate3d(0px, 0px, -1100px) rotateX(0deg) rotateY(0deg) scale(1) !important;
-} */
+}
 
 .boardSwiperBox .swiper-slide:first-child .osDirInfo h5, .boardSwiperBox .swiper-slide:last-child .osDirInfo h5{font-size: 20px; font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); text-align: center; margin-bottom: 0.6em;}
 .boardSwiperBox .swiper-slide:first-child .osDirInfo p, .boardSwiperBox .swiper-slide:last-child .osDirInfo p{font-size: var(--body); font-weight: var(--fw-medium); line-height: 122%; color: var(--primary-color); text-align: center; }
@@ -361,8 +359,8 @@ border-radius: 10px;}
   background-size: 100% 100%;
 }
 .leaderName{position: absolute; z-index: 99; bottom: 60px;}
-.leaderName h5{font-size: var(--body); font-family: var(--secondary-font); font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); margin-bottom: 0.5em;}
-.leaderName p{font-size: var(--body-sub); line-height: 122%; font-weight: var(--fw-medium); font-family: var(--secondary-font); color: var(--primary-color);}
+.leaderName h5{font-size: var(--body); font-weight: var(--fw-bold); line-height: 115%; color: var(--primary-color); margin-bottom: 0.8em;}
+.leaderName p{font-size: var(--body-sub); line-height: 122%; font-weight: var(--fw-medium);}
 
 /* Partner Section */
 .osPartnerBox{ background-image: url(../images/partnerbg.png);background-position: top;background-repeat: no-repeat;background-size: cover; isolation: isolate;}
@@ -441,3 +439,38 @@ border-radius: 10px;}
 .contactInfoMapBtn{margin-top: 2em;}
 .contactPgCont{padding-top: calc(var(--secGap) * 3);}
 .mobileCont{display: none;}
+
+
+/* Review Section */
+.dev-ReviewsSec{min-height: 100vh;background-image: url(../images/dev-Reviews-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+/* .dev-ReviewsSlidercont{background:rgba(228,141,61,0.38);border-radius:20px;padding: 3em 3.6em;} */
+.dev-ReviewsSlidercont-p > p{font-size: 16px;color: var(--White);font-family: var(--primary-font);font-weight: var(--fw-light);line-height: 1.3125;margin-bottom: 1em;}
+.revWritInfoImg{max-width: 39px;width: 100%;margin-right: 0.6em;}
+.revWritInfo-p > p{font-size: 20px;color: var(--White);font-weight: var(--fw-medium);line-height: 1.089;}
+.dev-ReviewsSlider{margin-left: 3.125em;background:rgba(228,141,61,0.38);border-radius:20px;padding: 3em 3.6em;max-width: 475px;}
+.dev-ReviewsSlider::after{content:" ";position:absolute;top:-7%;left:-4%;width:106%;height:112%;background-image:url(../images/rev-Img.png);background-position:center;background-repeat:no-repeat;background-size:100% 100%;}
+.slider-dots{display:flex;gap:8px;z-index:10;align-items:center;}
+.slider-dots .slick-dots{display:flex;align-items:center;justify-content:center;bottom: -50px;left: 0;}
+.slider-dots .slick-dots li button{width:10px;height:10px;border-radius:50%;background:#fff;opacity:1;border:none;cursor:pointer;transition:opacity 0.3s,width 0.3s,height 0.3s;}
+.slider-dots .slick-dots li.slick-active button{opacity:1;background: var(--primary-color);}
+
+.propertyFechCont > *{width: calc(25% - 18px);}
+.propertyFechCard-p > p{font-size: 16px;color: var(--White);font-weight: var(--fw-regular);line-height: 1.06;font-family: var(--primary-font);text-align: center;text-transform: capitalize;margin-top: 8px;}
+.propertyFechCardImg{max-width: 80px;margin: auto;}
+.propertyFechSec{background-image: url(../images/propFetch-bg.png);background-position: center;background-size: cover;background-repeat: no-repeat;}
+.propertyFechCont{gap: 48px 24px;}
+
+.orExperSec{background-image: url(../images/or-experi-bg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.orExper-p > p{font-size: 36px;color: var(--White);font-weight: var(--fw-light);line-height: 1.4;font-family: var(--primary-font);}
+.orExper-p{max-width:75%;margin-bottom: 2.5em;}
+.mortageCalcSec{background-image: url(../images/mortageCalc-bg.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.mortCalcSec{background:linear-gradient(108.53deg,rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.4) 100%);box-shadow:0px 4px 128.8px rgba(202,93,54,0.35);border-radius:12px;padding: 3em 5em;max-width: 848px;margin: auto;margin-top: 2.5em;}
+/* Mortage Calculator */
+.range-container{position:relative;width:100%;margin-top: -20px;}
+input[type="range"]{width:100%;-webkit-appearance:none;appearance:none;background:var(--White);position:relative;z-index:2;}
+input[type="range"]::-webkit-slider-runnable-track{height:4px;background:#ddd;border-radius:5px;}
+input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;height:16px;width:16px;background: var(--primary-color);border-radius:50%;margin-top:-6px;position:relative;z-index:3;cursor: pointer;}
+.range-track{height:4px;background: var(--primary-color);position:absolute;top:60%;left:0;transform:translateY(-50%);border-radius:5px;z-index:3;transition: all 0s;}
+.valueInput{width:max-content;margin-bottom:10px;display:block;background:transparent;border: none;outline: none;font-size: 20px;font-weight: var(--fw-semi-bold);color: #000000;font-family: var(--primary-font);}
+input[type="range"]::-webkit-slider-runnable-track{background:transparent;}
+span.inpAbTxt{top:0%;right:0;color: var(--primary-color);font-size: 20px;font-weight: var(--fw-semi-bold);font-family: var(--primary-font);}

@@ -1,3 +1,44 @@
+// Mortage Calculator Code
+function formatNumber(num) {
+  return num.toLocaleString("en-IN");
+}
+
+function updateRangeTrack(container) {
+  let range = container.querySelector(".rangeInput");
+  let track = container.querySelector(".range-track");
+  let percent = ((range.value - range.min) / (range.max - range.min)) * 100;
+  track.style.width = percent + "%";
+}
+
+document.querySelectorAll(".mortCalcInpSec").forEach(section => {
+  let range = section.querySelector(".rangeInput");
+  let input = section.querySelector(".valueInput");
+  let container = section.querySelector(".range-container");
+
+  // Update input when range changes
+  range.addEventListener("input", function () {
+    input.value = formatNumber(parseInt(this.value));
+    updateRangeTrack(container);
+  });
+
+  // Update range when input changes
+  input.addEventListener("input", function () {
+    let rawValue = this.value.replace(/,/g, "");
+    let num = parseInt(rawValue);
+    if (!isNaN(num) && num >= range.min && num <= range.max) {
+      range.value = num;
+      updateRangeTrack(container);
+    }
+    this.value = formatNumber(num);
+  });
+
+  // Initialize track on load
+  updateRangeTrack(container);
+});
+
+
+
+
 $(document).ready(function () {
 
 
@@ -199,9 +240,9 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      640: { slidesPerView: 3 },
-      768: { slidesPerView: 3 },
-      1024: { slidesPerView: 3 },
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 1 },
+      1024: { slidesPerView: 2 },
       1560: { slidesPerView: 3 },
     },
   });
@@ -230,21 +271,52 @@ $(document).ready(function () {
         settings: { slidesToShow: 4 }
       },
       {
-        breakpoint: 610,
-        settings: { slidesToShow: 3 }
+        breakpoint: 768,
+        settings: { slidesToShow: 4 }
       },
       {
         breakpoint: 480,
         settings: { slidesToShow: 3 }
-      },
-      {
-        breakpoint: 390,
-        settings: { slidesToShow: 2 }
       }
     ]
   });
-  
 
+
+
+// Review Slider
+  $('.dev-ReviewsSliderContent').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    appendDots: $('.slider-dots'),
+    customPaging: function (slider, i) {
+      return '<button type="button"></button>';
+    }
+  });
+  
+  // Function to update dot sizes based on distance from active
+  function updateDotSizes(currentIndex) {
+    const $dots = $('.slider-dots button');
+    $dots.each(function (i) {
+      const distance = Math.abs(i - currentIndex);
+      const size = Math.max(6, 16 - distance * 2); // 16px for active, smaller for farther
+      $(this).css({
+        width: `${size}px`,
+        height: `${size}px`
+      }).toggleClass('active', i === currentIndex);
+    });
+  }
+
+  // Apply dot sizing on change
+  $('.dev-ReviewsSliderContent').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    updateDotSizes(nextSlide);
+  });
+
+  // Initial sizing after dots render
+  setTimeout(() => updateDotSizes(0), 10);
   
 
 
@@ -300,5 +372,7 @@ $(function () {
     }
   );
 });
+
+
 
 

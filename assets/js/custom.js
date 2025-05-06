@@ -296,6 +296,24 @@ $(document).ready(function () {
       return '<button type="button"></button>';
     }
   });
+
+
+  $('.propSpecTxtSec').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.propSpecImg'
+  });
+  $('.propSpecImg').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.propSpecTxtSec',
+  });
+
+
+
   
   // Function to update dot sizes based on distance from active
   function updateDotSizes(currentIndex) {

@@ -36,7 +36,7 @@
 }
 
 @media only screen and (max-width:950px){
-    :root{--main-title:80px;--sub-title:42px;--Sub_Heading:17px;--body:18px;--body-sub:16px;--secGap:60px;}
+    :root{--main-title:65px;--sub-title:42px;--Sub_Heading:17px;--body:18px;--body-sub:16px;--secGap:60px;}
     .headMenu,.headBtns .langBtn{display: none;}
 
     .headBtn{flex-direction: row-reverse;}
@@ -107,8 +107,8 @@
 
 }
 @media only screen and (max-width:610px){
-    :root{--main-title:36px;--sub-title:24px;--Sub_Heading:16px;--body:20px;--body-sub:14px;--secGap:100px;}
-
+    :root{--main-title:36px;--sub-title:24px;--Sub_Heading:16px;--body:20px;--body-sub:16px;--secGap:100px;}
+    .headLogo {max-width: 79px;}
     .main-wrapper,.wrap-Content,.headerWrapper,.footerWrapper{width:91.43%;}
     .desktop{display:none;}
     .mobile{display:block;}
@@ -184,9 +184,31 @@
     .registerSecContTxt .comm_Title {font-size: 54px;}
 
     /* Our Story */
+    .ourStoryHeroSec{min-height: auto; background-image: url(../images/osherobann.png); background-size: 100% 100%;}
+    .ourStoryBannTxt h1{font-size: 44px !important; letter-spacing: 4px !important; margin-bottom: 16px !important;}
     .osMissionVision, .osMissionVision{background-position: right; min-height: 50vh;}
 
+    .osMissionVision{background-image: url(../images/missionmobbg.png); background-size: 100% 100%;}
+    .osMissionTxt, .osVisionSec .osMissionTxt{max-width: 100%;}
+    .osMissionTxt .comm_Title{text-align: center; margin-bottom: 20px;}
+    .osMissionTxt p, .osVisionSec .osMissionTxt p{text-align: center; padding: 0;}
+    .osVisionSec{min-height: auto; background-image: url(../images/visionmobbg.png); background-size: 100% 100%;}
+
+    .osLuxuryHotel{min-height: auto; background-image: url(../images/hospitalitymobbg.png); background-size: 100% 100%;}
+    .osLuxuryBox {padding: 0 43px;}
+    .osLuxuryBox h2{font-size: 24px; letter-spacing: 4%;}
+    .osLuxuryHotel::after{height: 0;}
+
+    .osInsipreLeg{background-image: url(../images/inspirelegmobbg.png); background-size: cover;}
+    .osInspireTxt p{text-align: center;}
+    .osLearInfoSlide{margin-top: 2.5em;}
+
+    .leaderName h5{margin-bottom: 8px;}
+
+    .osBackLogos { flex-direction: column; align-items: center; gap: 43px;}
+
     .partLogoGall{grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+    .partLogo:nth-child(3), .partLogo:nth-child(6){border-right: none;}
     .partLogo:nth-child(4), .partLogo:nth-child(8) {border-right: 1px solid rgba(255, 255, 255, 0.28);}
     .partLogo:nth-child(5), .partLogo:nth-child(6){border-bottom: 1px solid rgba(255, 255, 255, 0.28);}
 
@@ -198,8 +220,6 @@
 
 
 @media only screen and (max-width:550px){
-    .headLogo{max-width: 70px;}
-
     .musicThemeInfo .wrap-Content {padding: 0;}
     .media_Card{margin-bottom:1.5em;}
 
@@ -207,11 +227,15 @@
     .destiniBoxTxt {padding: 0;}
     .contactPgCont{padding-top:calc(var(--secGap) * 4);}
 }
+
 @media only screen and (max-width:460px){
     :root{--main-title:35px;}
-
     .registerSecFrm-0{transform:translate(50%,-90%);}
     .contactUsMapCont{right: 10%;}
+
+    .partLogoGall{grid-template-columns: repeat(2, 1fr); margin-top: 30px;}
+    .partLogo:nth-child(odd){border-right: 1px solid rgba(255, 255, 255, 0.28);}
+    .partLogo:nth-child(even){border-right: none;}
 }
 
 
@@ -221,7 +245,7 @@
 
 
 @media only screen and (max-width:360px){
-    :root{--main-title:32px;--sub-title:20px;--Sub_Heading:16px;--body:16px;--body-sub:14px;}
+    :root{--main-title:32px;--sub-title:20px;--Sub_Heading:16px;--body:16px;--body-sub:12px;}
     
 
     /* contact */
